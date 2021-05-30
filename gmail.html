@@ -1,0 +1,519 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Font Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="gmail.css" />
+    <title>Gmail Clone</title>
+  </head>
+  <body>
+    <!-- Header Starts -->
+    <div class="header">
+      <div class="header__left">
+        <span class="material-icons"> menu </span>
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/s6xuFouiun1S0NJ1P_u9z5qXDFs=/0x0:1320x880/320x213/filters:focal(555x335:765x545)/cdn.vox-cdn.com/uploads/chorus_image/image/67587450/newgmaillogo.0.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="header__middle">
+        <span class="material-icons"> search </span>
+        <input type="text" placeholder="Search Mail" />
+        <span class="material-icons"> arrow_drop_down </span>
+      </div>
+
+      <div class="header__right">
+        <span class="material-icons"> apps </span>
+        <span class="material-icons"> notifications </span>
+        <span class="material-icons"> account_circle </span>
+      </div>
+    </div>
+    <!-- Header Ends -->
+
+    <!-- Main Body Starts -->
+    <div class="main__body">
+      <!-- Sidebar Starts -->
+      <div class="sidebar">
+        <button class="sidebar__compose" data-toggle="modal" data-target="#myModal"><img class="compose_img" src="https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png">Compose</button>
+        <div class="sidebarOption sidebarOption__active">
+          <span class="material-icons"> inbox </span>
+          <h3>Inbox</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> star </span>
+          <h3>Starred</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> access_time </span>
+          <h3>Snoozed</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> label_important </span>
+          <h3>Important</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> near_me </span>
+          <h3>Sent</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> note </span>
+          <h3>Drafts</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> expand_more </span>
+          <h3>More</h3>
+        </div>
+
+        <div class="sidebar__footer">
+          <div class="sidebar__footerIcons">
+            <span class="material-icons"> person </span>
+            <span class="material-icons"> duo </span>
+            <span class="material-icons"> phone </span>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar Ends -->
+
+      <!-- Email List Starts -->
+      <div class="emailList">
+        <!-- Settings Starts -->
+        <div class="emailList__settings">
+          <div class="emailList__settingsLeft">
+            <input type="checkbox" />
+            <span class="material-icons"> arrow_drop_down </span>
+            <span class="material-icons"> redo </span>
+            <span class="material-icons"> more_vert </span>
+          </div>
+          <div class="emailList__settingsRight">
+            <span class="material-icons"> chevron_left </span>
+            <span class="material-icons"> chevron_right </span>
+            <span class="material-icons"> keyboard_hide </span>
+            <span class="material-icons"> settings </span>
+          </div>
+        </div>
+        <!-- Settings Ends -->
+
+        <!-- Section Starts -->
+        <div class="emailList__sections">
+          <div class="section section__selected">
+            <span class="material-icons"> inbox </span>
+            <h4>Primary</h4>
+          </div>
+
+          <div class="section">
+            <span class="material-icons"> people </span>
+            <h4>Social</h4>
+          </div>
+          
+          <div class="section">
+            <span class="material-icons"> local_offer </span>
+            <h4>Promotions</h4>
+          </div>
+
+          <div class="section">
+            <span class="material-icons"> info </span>
+            <h4>Updates</h4>
+          </div>
+
+          <div class="section">
+            <span class="material-icons"> forum </span>
+            <h4>Forums</h4>
+          </div>
+          
+        </div>
+        <!-- Section Ends -->
+
+        <!-- Email List rows starts -->
+        <div class="emailList__list">
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber
+                <span class="emailRow__description"> - on Your Channel My Code </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber
+                <span class="emailRow__description"> - on Your Channel My Code </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber<span class="emailRow__description">
+                  - on Your Channel My Code
+                </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber
+                <span class="emailRow__description"> - on Your Channel My Code </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber<span class="emailRow__description">
+                  - on Your Channel My Code
+                </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber<span class="emailRow__description">
+                  - on Your Channel My Code
+                </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2am</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber
+                <span class="emailRow__description"> - on Your Channel My Code </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber
+                <span class="emailRow__description"> - on Your Channel My Code </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber<span class="emailRow__description">
+                  - on Your Channel My Code
+                </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber<span class="emailRow__description">
+                  - on Your Channel My Code
+                </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2am</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber
+                <span class="emailRow__description"> - on Your Channel My Code </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber
+                <span class="emailRow__description"> - on Your Channel My Code </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber<span class="emailRow__description">
+                  - on Your Channel My Code
+                </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber<span class="emailRow__description">
+                  - on Your Channel My Code
+                </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2am</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> double_arrow </span>
+            </div>
+
+            <h3 class="emailRow__title">YouTube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber
+                <span class="emailRow__description"> - on Your Channel My Code </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">2pm</p>
+          </div>
+          <!-- Email Row Ends -->     
+          
+        </div>
+        <!-- Email List rows Ends -->
+      </div>
+      <!-- Email List Ends -->
+    </div>
+    <!-- Main Body Ends -->
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header" style="background-color: grey;color:white">  
+            <h4 class="modal-title">New Message</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+            <form>
+                <input id="recipients" type="text" class="form-control" placeholder="Recipients">
+                <hr>
+                <input id="subject" type="text" class="form-control" placeholder="Subject"><br>
+                <textarea id="content" class="form-control" rows="13" cols="78"></textarea><br>
+                <button class="btn btn-primary" onclick="emailSend()">Send</button>
+            </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal Ends -->
+
+<script>
+    function emailSend() {
+        var APiKey ="AIzaSyAkcGb43eEA9l7JRVJUhEDhgI7WH_eYBj4";
+        var clientID = "596396058002-be9v93ogk9ff9ltjkp1r9b5jscbu2qig.apps.googleusercontent.com";
+        var clientSecret = "shSyzVJistddT-0HAGWTk9Kh";
+
+        fetch("https://gmail.googleapis.com/upload/gmail/v1/users/meghadhabali@gmail.com/messages/send", {
+        method : 'POST',
+        header : {
+        'Content-type' : 'application/json',
+        'SCOPE' : 'https://mail.google.com/',
+        'x-api-key' : APiKey,
+        'Authorization': 'Basic ' + btoa(clientID + ':' + clientSecret)
+        },
+        "body": {
+        'content': 'My mail Content'
+        },
+})
+.then(response=>response.json())
+.then(data=>console.log(data))
+}
+</script>
+
+  </body>
+</html>
